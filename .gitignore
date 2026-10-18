@@ -1,0 +1,45 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / frontend output
+node_modules/
+frontend/dist/
+coverage/
+.vite/
+
+# Data and trained artifacts
+ml_engine/data/raw/**
+ml_engine/data/processed/**
+!ml_engine/data/raw/.gitkeep
+!ml_engine/data/processed/.gitkeep
+ml_engine/models/**
+!ml_engine/models/.gitkeep
+*.joblib
+*.pkl
+*.pickle
+*.parquet
+*.csv
+*.xlsx
+*.sqlite3
+
+# Editors and logs
+.idea/
+.vscode/
+*.log
+Thumbs.db
+.DS_Store
